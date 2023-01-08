@@ -1,0 +1,125 @@
+header {
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    transition: all .2s;
+
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+}
+#nav-sticky {
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: #fff;
+    transition: all .2s;
+}
+
+/* H button on top of page */
+header span{
+    position: absolute;
+    background-color: #121212;
+    color: #fff;
+    padding: .4rem .8rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    cursor: default;
+
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Menu */
+header ul {
+    display: flex;
+    margin: .85rem 0;
+    color: #979797;
+}
+header li {
+    margin: 0 1.5rem 0 1.5rem;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+/* space between Team and Services */
+.team-space{
+    margin-left: 2rem;
+}
+.service-space{
+    margin-left: 9rem;
+}
+
+header li:hover {
+    color: #000;
+}
+.home-color {
+    color: #000;
+}
+
+/* ham-menu */
+.nav-ham {
+    background: #444;
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    transition: all .2s;
+}
+
+.fa-bars {
+    z-index: 2;
+    color: #fff;
+    font-size: 1.6rem;
+    opacity: 1;
+    transition: all .2s;
+    
+    
+}
+.fa-xmark { 
+    z-index: 1;
+    color: #fff;
+    font-size: 1.8rem;
+    position: absolute;
+    opacity: 0;
+    transition: all .2s;
+}
+.ham-menu {
+    border-radius: 10%;
+    background: #444;
+    position: absolute;
+    right: 2vh;
+    top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .2s;
+
+}
+
+.ul-ham{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+.ul-ham li {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.ul-ham li:hover {
+    color: #fff;
+}

@@ -1,0 +1,71 @@
+.blog {
+    background: linear-gradient(175deg, #181818 70%, #fff 70.1%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.blog a {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.blog button {
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+    
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 13em;
+    height: 4em;
+    background-color: #fff;
+    border: 0;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+.blog button:hover {
+    transform: scale(1.03);
+}
+
+/* star wars text */
+#target{
+    position:absolute;
+    top:-3050px;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    font-size:2rem;
+    text-align:center;
+    transform-origin:50% 97%;
+    transform:perspective(300px) rotateX(30deg);
+    color: #fff;
+    opacity: .1;
+    line-height: 1.2;
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+}
+#target>div{
+    padding-top:3500px;
+    animation:autoscroll 1000s linear infinite;
+    
+}
+
+@keyframes autoscroll{
+    to{
+        margin-top:-50000px;
+    }    
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
