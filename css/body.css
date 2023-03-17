@@ -63,6 +63,18 @@ body {
     font-family: 'Roboto', sans-serif;
 	
 }
+/* preload images */
+body::before {
+	content: url(../../images/bw-icon.jpg)
+			 url(../../images/service-analytics.jpg)
+			 url(../../images/service-cloud.jpg)
+			 url(../../images/service-love.jpg)
+			 url(../../images/team-antonio.jpg)
+			 url(../../images/team-justin.jpg)
+			 url(../../images/team-mark.jpg);
+
+	display: none; 
+}
 
 /* scroll up button */
 .top {
